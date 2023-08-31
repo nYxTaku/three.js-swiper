@@ -1,0 +1,123 @@
+/* Reset some default styles */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #daa747;
+    color: #daa747;
+    height: fit-content;
+    overflow: hidden;
+  }
+  
+  header {
+    background-color: #daa747;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;    
+  }
+
+  header:hover {
+    opacity: 1;
+  }
+  
+  nav h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #191919;
+  }
+  
+  nav p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #191919;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .section {
+    background-color: #191919;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .section h2 {
+    color: #daa747;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    color: #daa747;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .swiper {
+    width: 1000px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .swiper-slide {
+    position: relative;
+  }
+  
+  .swiper-slide p {
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #daa747;
+    padding: 10px;
+    z-index: 0;
+    font-size: 72px;
+  }
+  
+  model-viewer {
+    display: block;
+    margin: 20px auto;
+    height: 600px;
+    width: 1000px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+  }
+
+  footer {
+    background-color: #daa747;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  footer:hover {
+    opacity: 1;
+  }
+  
+  footer p {
+    color: #191919;
+    font-size: 14px;
+  }

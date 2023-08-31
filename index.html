@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Libraries</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css"/>
+  <!-- Add any additional CSS or external resources here -->
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <!-- Add any additional JavaScript or external scripts here -->
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Car Showcase</h1>
+      <p>Simple Website to show working of sliders and 3D Viewer</p>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+        <h2>Showcase Section</h2>
+        <p>This section shows 2 cars models using 3D viewer and slider library in JS.</p>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <model-viewer src="AE86.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="syferfontein_1d_clear_4k.hdr" exposure="1" shadow-softness="1" auto-rotate camera-orbit="895.8deg 90.05deg 8.933m" field-of-view="30deg">
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                    </model-viewer>
+                    <p>Toyota<br>Trueno AE86</p>
+                </div>
+                <div class="swiper-slide">
+                    <model-viewer src="Terzo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="syferfontein_1d_clear_4k.hdr" exposure="1" shadow-softness="1" auto-rotate camera-orbit="69.77deg 85.41deg 31.01m" field-of-view="30deg">
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                    </model-viewer>
+                    <p>Lamborghini<br>Terzo</p>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- Add more sections as needed -->
+  </main>
+
+  <footer>
+    <p>&copy; 2023 nYx. All rights reserved.</p>
+  </footer>
+</body>
+</html>
